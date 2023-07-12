@@ -1,0 +1,19 @@
+INSTALLATION OF TERRAFORM IN LINUX
+
+yum-get update -y
+yum-get install wget unzip -y
+
+mkdir opt
+cd opt
+mkdir terraform
+cd terraform
+
+wget https://releases.hashicorp.com/terraform/0.12.18/terraform_0.12.18_linux_amd64.zip 
+
+unzip terraform_0.12.18_linux_amd64.zip
+
+ls -lt
+
+mv terraform /usr/local/bin/
+
+terraform -v
